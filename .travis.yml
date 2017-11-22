@@ -17,6 +17,7 @@ script:
   - anteater --project antest --patchset ./patch
 
 after_failure:
-  - echo "Anteater Build Passed on ($TRAVIS_BRANCH) ($TRAVIS_PULL_REQUEST) ($TRAVIS_TAG)"
-after_success:
   - echo "Anteater Build Failed on ($TRAVIS_BRANCH) ($TRAVIS_PULL_REQUEST) ($TRAVIS_TAG)"
+after_success:
+  - echo "Anteater Build Success on ($TRAVIS_BRANCH) ($TRAVIS_PULL_REQUEST) ($TRAVIS_TAG)"
+  - - ./anteater.sh
