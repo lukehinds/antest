@@ -10,4 +10,6 @@ python:
 install: pip install anteater
 
 # command to run tests, e.g. python setup.py test
-script: anteater --project antest --path .
+
+script: git diff --name-only HEAD^ > ~/patch
+script: anteater --project antest --patchset ~/patch
