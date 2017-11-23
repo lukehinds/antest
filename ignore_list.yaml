@@ -6,3 +6,6 @@ file_audits:
   file_names: [nullvalue]
   file_contents:
     - ^#
+
+project_exceptions:
+    - antest: exceptions/antest.yaml
