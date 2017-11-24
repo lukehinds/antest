@@ -189,20 +189,5 @@ file_audits:
       regex: 0\.0\.0\.0
       desc: "Interface listening on all addresses - may break security zones"
 
-file_ignore:
-  - '.rst'
-  - '.md'
-
-licence:
-  licence_ext:
-    - '.java'
-    - '.md'
-    - '.py'
-    - '.rb'
-    - '.rst'
-    - '.sh'
-  licence_ignore:
-    - '__init__.py'
-
 project_exceptions:
   - antest: exceptions/antest.yaml
