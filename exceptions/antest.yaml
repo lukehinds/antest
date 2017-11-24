@@ -9,6 +9,9 @@ binaries:
   ping:
     - d0d7dfc73e0fac09d920ebbdf8cd4e0ef623f15d6246ff20d7a6d12c9a48bf41
 
+# Ignore file_names and file_contents that match the following RegExp
 file_audits:
-  file_names: [nullvalue]
-  file_contents: [nullvalue]
+  file_names:
+    - ignore-filename.txt
+  file_contents:
+    - ignore_value
