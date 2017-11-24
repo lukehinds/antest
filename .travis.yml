@@ -11,6 +11,7 @@ install:
 
 before_script:
   - git diff --name-only HEAD^ > ./patch
+  - anteater --version
 
 script:
   - anteater --project antest --patchset ./patch
