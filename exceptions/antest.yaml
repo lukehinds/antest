@@ -6,8 +6,8 @@
 # of escaping YAML delimiters too (such as `:`) using double quotes "".
 
 binaries:
-  ping:
-    - d0d7dfc73e0fac09d920ebbdf8cd4e0ef623f15d6246ff20d7a6d12c9a48bf41
+  images/pal.png:
+    - a71e13ebeb2500ed20781ab3ae8a9b306cf69a6c8be9a31e96d4e04f1657b4d8
 
 # Ignore file_names and file_contents that match the following RegExp
 file_audits:
