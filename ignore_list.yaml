@@ -2,7 +2,7 @@
 binaries:
   path/to/example.png:
     - 609feaed93afbea14c6b10c6effc986f39d1deb0a372ac088129bb22bbca8834
-  images/pal.png:
+  pal.png:
     - a71e13ebeb2500ed20781ab3ae8a9b306cf69a6c8be9a31e96d4e04f1657b4d8
 
 file_audits:
