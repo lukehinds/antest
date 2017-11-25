@@ -2,6 +2,8 @@
 binaries:
   path/to/example.png:
     - 609feaed93afbea14c6b10c6effc986f39d1deb0a372ac088129bb22bbca8834
+  binary2:
+    - 4cebb130baa39363edd07e25e878cc1656628847719891f0dd3628afc6aa01f6
 
 file_audits:
   file_names:
