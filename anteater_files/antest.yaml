@@ -8,6 +8,8 @@
 binaries:
   ping:
     - d0d7dfc73e0fac09d920ebbdf8cd4e0ef623f15d6246ff20d7a6d12c9a48bf41
+  binary:
+    - 407fb352a8b709fa1890f200fee5186455fe815fb6c7808305f210e2f1faf76d
 
 # Ignore file_names and file_contents that match the following RegExp
 file_audits:
