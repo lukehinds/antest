@@ -16,4 +16,4 @@ file_ignore:
   - '.md'
 
 project_exceptions:
-    - antest: exceptions/antest.yaml
+    - antest: anteater_files/antest.yaml
