@@ -17,3 +17,12 @@ file_audits:
     - ignore-filename.txt
   file_contents:
     - ignore_value
+
+ignore_directories:
+  - .git/
+  - examples
+  - anteater_files
+  - tests/
+  - docs/
+  - spec/
+

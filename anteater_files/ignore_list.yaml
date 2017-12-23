@@ -17,5 +17,13 @@ file_ignore:
   - '.rst'
   - '.md'
 
+ignore_directories:
+  - .git/
+  - examples
+  - anteater_files
+  - tests/
+  - docs/
+  - spec/
+
 project_exceptions:
     - antest: anteater_files/antest.yaml
