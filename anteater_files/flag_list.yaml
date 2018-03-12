@@ -2,10 +2,6 @@
 # This file uses standard regular expression syntax,  however be mindful
 # of escaping YAML delimiters too (such as `:`) using double quotes "".
 
-binaries:
-  binary_ignore:
-    - \.git/(index|objects)
-
 file_audits:
   file_names:
     - \.asc
@@ -44,6 +40,7 @@ file_audits:
     - omniauth\.rb
     - carrierwave\.rb
     - schema\.rb
+    - knife\.rb
     - database\.yml
     - settings\.py
     - keychain
@@ -53,6 +50,25 @@ file_audits:
     - kwallet
     - aws_access_key_id
     - aws_secret_access_key
+    - otr\.private_key
+    - ovpn
+    - agilekeychain
+    - \.log
+    - gnucash
+    - backup
+    - jenkins\.plugins\.publish_over_ssh\.BapSshPublisherPlugin\.xml
+    - LocalSettings\.php
+    - tblk
+    - Favorites\.plist
+    - configuration\.user\.xpl
+    - tugboat
+    - git-credentials
+    - git-config
+    - proftpdpasswd
+    - robomongo\.json
+    - filezilla\.xml
+    - recentservers\.xml
+    - ventrilo_srv\.ini
 
   file_contents:
     private_key:
@@ -62,14 +78,6 @@ file_audits:
     password:
       regex: (password|passwd)(.*:|.*=.*)
       desc: "Possible hardcoded password"
-
-    curl:
-      regex: \bcurl\b
-      desc: "Curl can be used for retrieving objects from untrusted sources"
-
-    clone:
-      regex: git.*clone
-      desc: "clone blocked as using an non approved external source"
 
     dual_ec_drbg:
       regex: dual_ec_drbg
@@ -131,10 +139,6 @@ file_audits:
       regex: tlsv1
       desc: "Insecure TLS Version"
 
-    wget:
-      regex: wget
-      desc: "WGET is blocked to unknown / untrusted destinations"
-
     run_as_root:
       regex: run_as_root.*=.*True
       desc: "Its better to use sudo or a rootwrapper"
@@ -170,7 +174,7 @@ file_audits:
         "tmp directories are risky. They are world writable and easily guessed"
 
     yamlload:
-      regex: \yaml\.load
+      regex: yaml\.load
       desc: |
         "Avoid dangerous file parsing & serialization libs, use yaml.safe_load"
 
@@ -188,6 +192,3 @@ file_audits:
     allint:
       regex: 0\.0\.0\.0
       desc: "Interface listening on all addresses - may break security zones"
-
-project_exceptions:
-  - antest: exceptions/antest.yaml
