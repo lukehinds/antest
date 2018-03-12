@@ -3,7 +3,7 @@
 language: python
 
 python:
-  - "3.5"
+  - "3.6"
 
 # command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
 install:
@@ -14,7 +14,6 @@ services:
 
 before_script:
   - git diff --name-only HEAD^ > ./patch
-  - anteater --version
 
 script:
   - anteater --version
