@@ -9,6 +9,9 @@ python:
 install:
   - pip install anteater --no-cache-dir
 
+services:
+  - redis-server
+
 before_script:
   - git diff --name-only HEAD^ > ./patch
   - anteater --version
