@@ -17,4 +17,5 @@ before_script:
   - anteater --version
 
 script:
+  - anteater --version
   - anteater --ips --urls --bincheck --project antest --patchset ./patch
