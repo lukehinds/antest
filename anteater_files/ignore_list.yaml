@@ -39,4 +39,4 @@ ignore_directories:
 
 # Add your project exception file into here.
 project_exceptions:
-  - testproject: anteater_files/testproject.yaml
+  - antest: anteater_files/b.yaml
