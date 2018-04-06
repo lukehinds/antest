@@ -19,6 +19,12 @@ file_audits:
   file_contents:
     - \bcurl|wget\s+\\
 
+ip_ignore:
+  - '192.0.43.8'
+
+url_ignore:
+  - 'www.github.com'
+  
 # Any files with the following extensions will not be scanned
 file_ignore:
   - '.rst'
